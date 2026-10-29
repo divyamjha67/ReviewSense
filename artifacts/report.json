@@ -1,0 +1,326 @@
+{
+  "model_version": "1.0.0",
+  "model_name": "Logistic regression (C=4)",
+  "trained_at_utc": "2026-10-29T11:46:06.143379+00:00",
+  "seed": 42,
+  "python": "3.12.14",
+  "sklearn": "1.7.2",
+  "dataset_sha256": "8631d8cba8de4da6c930714ee25843564403f3b97d95e234ff2a10d088c4c1d0",
+  "model_sha256": "aafbec8f4bbae6674e40e4b68ed8c110b02dc926390842ff896d4fcde3a61e35",
+  "rows_raw": 3000,
+  "rows_clean": 2978,
+  "duplicates_removed": 20,
+  "conflicting_removed": 0,
+  "invalid_removed": 2,
+  "train_rows": 2382,
+  "test_rows": 596,
+  "positive_rate": 0.49932840832773673,
+  "vocabulary_size": 20000,
+  "threshold": 0.5,
+  "comparison": [
+    {
+      "name": "Prior baseline",
+      "cv_f1_mean": 0.0,
+      "cv_f1_std": 0.0,
+      "fold_f1": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Logistic regression (C=0.1)",
+      "cv_f1_mean": 0.7704464460210468,
+      "cv_f1_std": 0.007539804036340205,
+      "fold_f1": [
+        0.7629139072847683,
+        0.7807486631016043,
+        0.7676767676767676
+      ]
+    },
+    {
+      "name": "Logistic regression (C=1)",
+      "cv_f1_mean": 0.7962242442472469,
+      "cv_f1_std": 0.0012766089664148197,
+      "fold_f1": [
+        0.7953367875647669,
+        0.7953063885267275,
+        0.7980295566502463
+      ]
+    },
+    {
+      "name": "Logistic regression (C=4)",
+      "cv_f1_mean": 0.8081630321947223,
+      "cv_f1_std": 0.004594056894451448,
+      "fold_f1": [
+        0.8092189500640204,
+        0.8020833333333334,
+        0.8131868131868132
+      ]
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.8120805369127517,
+    "precision": 0.803921568627451,
+    "recall": 0.825503355704698,
+    "f1": 0.8145695364238411,
+    "macro_f1": 0.8120466729738254,
+    "roc_auc": 0.8961420656727174,
+    "confusion_matrix": [
+      [
+        238,
+        60
+      ],
+      [
+        52,
+        246
+      ]
+    ]
+  },
+  "domain_metrics": [
+    {
+      "source": "amazon",
+      "rows": 197,
+      "accuracy": 0.8274111675126904,
+      "precision": 0.8076923076923077,
+      "recall": 0.8571428571428571,
+      "f1": 0.8316831683168316,
+      "macro_f1": 0.8272999174917491,
+      "roc_auc": 0.9289837146980005,
+      "confusion_matrix": [
+        [
+          79,
+          20
+        ],
+        [
+          14,
+          84
+        ]
+      ]
+    },
+    {
+      "source": "imdb",
+      "rows": 200,
+      "accuracy": 0.78,
+      "precision": 0.7916666666666666,
+      "recall": 0.76,
+      "f1": 0.7755102040816326,
+      "macro_f1": 0.7799119647859143,
+      "roc_auc": 0.8452999999999999,
+      "confusion_matrix": [
+        [
+          80,
+          20
+        ],
+        [
+          24,
+          76
+        ]
+      ]
+    },
+    {
+      "source": "yelp",
+      "rows": 199,
+      "accuracy": 0.8291457286432161,
+      "precision": 0.8113207547169812,
+      "recall": 0.86,
+      "f1": 0.8349514563106796,
+      "macro_f1": 0.8289340614886731,
+      "roc_auc": 0.9144444444444444,
+      "confusion_matrix": [
+        [
+          79,
+          20
+        ],
+        [
+          14,
+          86
+        ]
+      ]
+    }
+  ],
+  "top_terms": {
+    "positive": [
+      {
+        "term": "great",
+        "weight": 8.122494195782545
+      },
+      {
+        "term": "good",
+        "weight": 5.678152414954602
+      },
+      {
+        "term": "and",
+        "weight": 4.114074207267451
+      },
+      {
+        "term": "love",
+        "weight": 3.999406697069884
+      },
+      {
+        "term": "excellent",
+        "weight": 3.982754510402645
+      },
+      {
+        "term": "nice",
+        "weight": 3.9365379633106055
+      },
+      {
+        "term": "works",
+        "weight": 3.404611862052846
+      },
+      {
+        "term": "amazing",
+        "weight": 3.373003871915821
+      },
+      {
+        "term": "best",
+        "weight": 3.229175086805724
+      },
+      {
+        "term": "delicious",
+        "weight": 3.103271362105919
+      },
+      {
+        "term": "the best",
+        "weight": 2.9759668755059554
+      },
+      {
+        "term": "well",
+        "weight": 2.8538963166338798
+      }
+    ],
+    "negative": [
+      {
+        "term": "not",
+        "weight": -7.64404264822572
+      },
+      {
+        "term": "bad",
+        "weight": -6.072656332806239
+      },
+      {
+        "term": "poor",
+        "weight": -3.578410049859396
+      },
+      {
+        "term": "worst",
+        "weight": -3.45523857859561
+      },
+      {
+        "term": "don",
+        "weight": -3.1991710829552686
+      },
+      {
+        "term": "terrible",
+        "weight": -2.724314064664646
+      },
+      {
+        "term": "awful",
+        "weight": -2.598678603684913
+      },
+      {
+        "term": "no",
+        "weight": -2.5753842524307666
+      },
+      {
+        "term": "disappointment",
+        "weight": -2.520100399357916
+      },
+      {
+        "term": "horrible",
+        "weight": -2.4886965670928975
+      },
+      {
+        "term": "not good",
+        "weight": -2.3933932678344343
+      },
+      {
+        "term": "didn",
+        "weight": -2.3522779929346322
+      }
+    ]
+  },
+  "test_zero_vocabulary": 1,
+  "metric_scope": "All held-out rows, using the underlying classifier at threshold 0.5. The app abstains on rows with no vocabulary matches.",
+  "error_examples": [
+    {
+      "review": "predictable, but not a bad watch.",
+      "actual": "Positive",
+      "predicted": "Negative",
+      "positive_probability": 0.024025677929755664
+    },
+    {
+      "review": "the loudspeaker option is great, the bumpers with the lights is very ... appealing.",
+      "actual": "Negative",
+      "predicted": "Positive",
+      "positive_probability": 0.9687727344129723
+    },
+    {
+      "review": "a film not easily forgotten.",
+      "actual": "Positive",
+      "predicted": "Negative",
+      "positive_probability": 0.07303716367496228
+    },
+    {
+      "review": "i would have casted her in that role after ready the script.",
+      "actual": "Positive",
+      "predicted": "Negative",
+      "positive_probability": 0.1317106075128378
+    },
+    {
+      "review": "full of unconvincing cardboard characters it is blandly written by edward chodorov, who also produced, and is surprisingly directed by jean negulesco from whom one would expect a great deal more.",
+      "actual": "Negative",
+      "predicted": "Positive",
+      "positive_probability": 0.8605171729298784
+    },
+    {
+      "review": "graphics is far from the best part of the game.",
+      "actual": "Negative",
+      "predicted": "Positive",
+      "positive_probability": 0.8515734891468926
+    },
+    {
+      "review": "it's a shame to see good actors like thomerson and james make a living in a mess like this.",
+      "actual": "Negative",
+      "predicted": "Positive",
+      "positive_probability": 0.8279793681013988
+    },
+    {
+      "review": "very displeased.",
+      "actual": "Negative",
+      "predicted": "Positive",
+      "positive_probability": 0.8061056649409494
+    },
+    {
+      "review": "very tough and very short on flavor!",
+      "actual": "Negative",
+      "predicted": "Positive",
+      "positive_probability": 0.805009231778239
+    },
+    {
+      "review": "this film highlights the fundamental flaws of the legal process, that it's not about discovering guilt or innocence, but rather, is about who presents better in court.",
+      "actual": "Positive",
+      "predicted": "Negative",
+      "positive_probability": 0.21545764232848755
+    },
+    {
+      "review": "the movie is not completely perfect but 'titta di girolamo' will stay with you for a long time after the vision of the movie.",
+      "actual": "Positive",
+      "predicted": "Negative",
+      "positive_probability": 0.2234743902755121
+    },
+    {
+      "review": "now the burgers aren't as good, the pizza which used to be amazing is doughy and flavorless.",
+      "actual": "Negative",
+      "predicted": "Positive",
+      "positive_probability": 0.7703770959037092
+    }
+  ],
+  "limitations": [
+    "Curated balanced short English sentences, not representative production feedback",
+    "No neutral sentiment class; sarcasm and mixed opinions are not specifically modeled",
+    "Random stratified sentence split, not a future-time or author-disjoint evaluation",
+    "Probabilities are not explicitly calibrated; vocabulary matches do not establish domain validity"
+  ]
+}

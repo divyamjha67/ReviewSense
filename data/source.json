@@ -1,0 +1,19 @@
+{
+  "dataset": "Sentiment Labelled Sentences",
+  "creator": "Dimitrios Kotzias",
+  "year": 2015,
+  "doi": "https://doi.org/10.24432/C57604",
+  "dataset_page": "https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "download_url": "https://archive.ics.uci.edu/static/public/331/sentiment+labelled+sentences.zip",
+  "archive_sha256": "afc26626d710899948693e1a61405dce197f57ffa719fa1130d346b4cc095343",
+  "raw_csv_sha256": "8631d8cba8de4da6c930714ee25843564403f3b97d95e234ff2a10d088c4c1d0",
+  "rows": 3000,
+  "sources": [
+    "amazon",
+    "imdb",
+    "yelp"
+  ],
+  "changes": "Archive parsed to CSV; normalization, duplicate removal and splitting happen during training."
+}
